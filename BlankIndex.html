@@ -31,7 +31,7 @@
 
       }
   
-      .Personal-summary {
+      .CoolClass {
           font-family: 'Great Vibes', cursive; 
           color: #ff007f;                   
           background-color: #1a1a1d;         
@@ -70,7 +70,7 @@
   </h1>
   <p class="Major-and-Year-of-University-Enrollment">Civil Engineering in Computer Science</p>
   <p class="Major-and-Year-of-University-Enrollment">Enrolled in Universidad de los Andes in 2021</p>
-  <p class="Personal-summary">A Tier Student</p>
+  <p class="CoolClass">A Tier Student</p>
 
   <table class="table caption-top">
       <thead>
@@ -126,25 +126,29 @@
     <a class="github-link" href="https://github.com/NicolasLeighton">My GitHub!</a>
 </div>
 
-<h2>The input element</h2>
-
-<form id="textForm">
-  <label for="textInput">Enter text:</label>
-  <input type="text" id="textInput" name="textInput"><br><br>
-  <input type="submit" value="Submit">
-</form>
-
 <br>
-<p class="Personal-summary" id="displayText"></p>
 
-<script>
-    document.getElementById("textForm").addEventListener("submit", function(event){
-        event.preventDefault(); 
-        const text  = document.getElementById("textInput").value; 
-        document.getElementById("displayText").innerText =  text; 
-    });
-</script>
+<div class="CoolClass">
+    <h1>Help me finish this page</h1>
+    <b>Add text</b>
 
+    <form id="textForm">
+    <label for="textInput">Enter text:</label>
+    <input type="text" id="textInput" name="textInput"><br><br>
+    <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <p class="Personal-summary" id="displayText"></p>
+
+    <script>
+        document.getElementById("textForm").addEventListener("submit", function(event){
+            event.preventDefault(); 
+            const text  = document.getElementById("textInput").value; 
+            document.getElementById("displayText").innerText =  text; 
+        });
+    </script>
+</div>
 
 </body>
 </html>
